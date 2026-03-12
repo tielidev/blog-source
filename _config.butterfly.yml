@@ -5,7 +5,7 @@
 # Site
 title: Alex's Blog
 subtitle: ''
-description: 'A blog about programming, technology, and software development.'
+description: ''
 keywords:
 author: Alex Tieli
 language: en
@@ -106,3 +106,6 @@ deploy:
   repo: https://github.com/tielidev/blog-source.git
   branch: gh-pages  # 存放打包后文件的分支名
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+
+#background: "url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN) no-repeat center / cover fixed"
+index_img: https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN
