@@ -1,3 +1,12 @@
+---
+title: hexo guide
+date: 2026-03-12 22:50:50
+tags: 
+  - Hexo
+categories: 
+  - 随笔
+---
+
 # Hexo 常用命令手册
 
 ## 1. 核心流程命令 (The Big Four)
