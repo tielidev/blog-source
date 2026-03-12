@@ -108,4 +108,6 @@ deploy:
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 #background: "url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN) no-repeat center / cover fixed"
-index_img: https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN
+index_img: https://bing.biturl.top/?resolution=3840&format=image&index=0&mkt=zh-CN
+default_top_img: https://picsum.photos/3840/2160
+index_post_default_img: https://picsum.photos/3840/2160
