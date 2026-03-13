@@ -5,6 +5,7 @@ tags:
   - 组合数学
 categories: 
   - 随笔
+mathjax: true
 ---
 
 本文介绍一些排列组合常见的数

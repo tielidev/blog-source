@@ -5,6 +5,7 @@ tags:
   - Markdown
 categories: 
   - 随笔
+mathjax: true
 ---
 
 # Markdown 常用语法标准指南
