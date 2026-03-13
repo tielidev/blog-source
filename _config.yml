@@ -106,5 +106,15 @@ deploy:
   repo: https://github.com/tielidev/blog-source.git
   branch: gh-pages  # 存放打包后文件的分支名
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
-mathjax:
+math:
   enable: true
+  engine: mathjax
+
+mathjax:
+  tags: none # 或者 'ams'
+  single_dollars: true # 允许使用单个 $ 作为行内公式
+  double_dollars: true
+  cjk_width: 0.9 # 适应中文字符宽度
+  normal_size: 100
+  # 这一步非常重要：确保它指向正确的 MathJax 脚本
+  src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
