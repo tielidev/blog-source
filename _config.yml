@@ -106,3 +106,5 @@ deploy:
   repo: https://github.com/tielidev/blog-source.git
   branch: gh-pages  # 存放打包后文件的分支名
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+mathjax:
+  enable: true
