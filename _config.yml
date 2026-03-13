@@ -118,3 +118,14 @@ mathjax:
   normal_size: 100
   # 这一步非常重要：确保它指向正确的 MathJax 脚本
   src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+
+markdown_it:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-mathjax  # 需要额外安装这个插件

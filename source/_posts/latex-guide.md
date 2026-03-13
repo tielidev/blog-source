@@ -80,9 +80,9 @@ mathjax: true
 ```
 
 渲染效果：
-$$
-\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
-$$
+{% raw %}
+$$\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$$
+{% endraw %}
 > **小贴士：** 在矩阵内部，`&` 用于分隔列，`\\` 用于分隔行。
 
 ---
