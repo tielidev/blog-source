@@ -40,7 +40,17 @@ $$f: \{i_k\} \to \{j_k\},其中j_k=i_k+k-1$$
 将n个不同的元素不分首尾排成一圈，称为n个相异元素的圆排列，其排列种数为$(n-1)!$
 ### 1.8项链数
 将n粒不同的珠子用线串成一串，则得到不同的项链数，当n=1或2时为1，当$n\ge{3}$时为$\frac{1}{2}(n-1)!$.（注意到项链可以做翻转操作）
-### 1.9第一类斯特林数
-
-### 1.10第二类斯特林数
-
+### 1.9第一类斯特林数 圆排列问题
+#### 1.9.1 组合意义
+它表示将$n$个不同元素排列成 k 个非空循环（轮换）的方法数。记为$\left[ \begin{matrix} n \\ k \end{matrix} \right]$.
+直观理解： $n$ 个人坐成 $k$ 张圆桌，每张桌子不能为空，有多少种坐法？（圆桌旋转后相同算同一种）.
+#### 1.9.2 递推公式
+$$\left[ \begin{matrix} n \\ k \end{matrix} \right] = (n-1) \left[ \begin{matrix} n-1 \\ k \end{matrix} \right] + \left[ \begin{matrix} n-1 \\ k-1 \end{matrix} \right]$$
+逻辑： 同样考虑第 $n$ 个人。他单独坐一张桌子：剩下 $n-1$ 个人坐 $k-1$ 张桌子，即 $\left[ \begin{smallmatrix} n-1 \\ k-1 \end{smallmatrix} \right]$。他插进别人的桌子：前 $n-1$ 个人已经坐好了 $k$ 张圆桌。第 $n$ 个人可以坐在任何一个人的“左手边”，共有 $n-1$ 个空位可选，即 $(n-1) \left[ \begin{smallmatrix} n-1 \\ k \end{smallmatrix} \right]$。
+### 1.10第二类斯特林数 分盒问题
+第二类斯特林数（记作 $\left\{ \begin{smallmatrix} n \\ k \end{smallmatrix} \right\}$ 或 $S(n, k)$）在实际应用中更常见。
+#### 1.10.1 组合意义
+它表示将 $n$ 个不同的元素拆分成 $k$ 个非空且不可区分的集合的方法数。直观理解： 你有 $n$ 个不同的苹果，要把它们装进 $k$ 个一模一样的篮子里，每个篮子至少装一个，有多少种装法？
+#### 1.10.2 递推公式
+$$\left\{ \begin{matrix} n \\ k \end{matrix} \right\} = k \left\{ \begin{matrix} n-1 \\ k \end{matrix} \right\} + \left\{ \begin{matrix} n-1 \\ k-1 \end{matrix} \right\}$$
+逻辑： 考虑第 $n$ 个元素。它单独占一个集合：那么剩下的 $n-1$ 个元素只需分成 $k-1$ 个集合，即 $\left\{ \begin{smallmatrix} n-1 \\ k-1 \end{smallmatrix} \right\}$。它加入现有的集合：前 $n-1$ 个元素已经分好了 $k$ 个集合，第 $n$ 个元素有 $k$ 种选择进入其中任意一个，即 $k \left\{ \begin{smallmatrix} n-1 \\ k \end{smallmatrix} \right\}$。
